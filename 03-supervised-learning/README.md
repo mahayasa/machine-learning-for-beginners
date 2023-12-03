@@ -55,6 +55,7 @@ tree.plot_tree(clf)
 ```
 
 ## 5. Linear Regression
+Linear Regression is a fundamental and widely used statistical method in machine learning and data science for modeling the relationship between a dependent variable (also called the target) and one or more independent variables (features or predictors). It assumes that there is a linear relationship between the variables, meaning changes in the independent variables are linearly related to changes in the dependent variable.
 
 Linear regression is a simple yet powerful algorithm used for predicting a continuous target variable. Let's implement a basic linear regression model using Python and scikit-learn.
 
