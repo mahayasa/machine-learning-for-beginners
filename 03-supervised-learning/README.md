@@ -24,7 +24,49 @@ Supervised learning is a type of machine learning where the algorithm is trained
 
 There are two main types of supervised learning: regression and classification. Regression deals with predicting a continuous output, while classification deals with predicting a discrete output.
 
-## 3. Linear Regression
+
+## 3. Decision Trees
+
+Decision trees are versatile algorithms used for both regression and classification tasks. They work by recursively splitting the dataset based on the most significant attribute. This creates a tree-like structure where each leaf node represents a prediction.
+
+takes as input two arrays: an array X, sparse or dense, of shape (n_samples, n_features) holding the training samples, and an array Y of integer values, shape (n_samples,), holding the class labels for the training 
+```python
+from sklearn import tree
+X = [[0, 0], [1, 1]]
+Y = [0, 1]
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X, Y)
+```
+the model can then be used to predict the class of samples:
+```python
+clf.predict([[2., 2.]])
+``
+visualize the tree using iris dataset
+```python
+from sklearn.datasets import load_iris
+from sklearn import tree
+iris = load_iris()
+X, y = iris.data, iris.target
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X, y)
+```
+```python
+tree.plot_tree(clf)
+```
+
+## 4. Support Vector Machines (SVM)
+
+Support Vector Machines are powerful classifiers that aim to find a hyperplane that best separates the data into different classes. SVMs work well in high-dimensional spaces and are effective for both linear and non-linear relationships.
+
+## 5. K-Nearest Neighbors (KNN)
+
+K-Nearest Neighbors is a simple and intuitive algorithm used for classification and regression. It classifies a data point by a majority vote of its k-nearest neighbors, where k is a user-defined constant.
+
+## 6. Random Forest
+
+Random Forest is an ensemble learning method that combines multiple decision trees to create a more robust and accurate model. It randomly selects subsets of the features and builds several trees, and then averages the predictions for better generalization.
+
+## 7. Linear Regression
 
 Linear regression is a simple yet powerful algorithm used for predicting a continuous target variable. Let's implement a basic linear regression model using Python and scikit-learn.
 
@@ -63,19 +105,3 @@ plt.ylabel('y')
 plt.title('Linear Regression Example')
 plt.show()
 ```
-
-## 4. Decision Trees
-
-Decision trees are versatile algorithms used for both regression and classification tasks. They work by recursively splitting the dataset based on the most significant attribute. This creates a tree-like structure where each leaf node represents a prediction.
-
-## 5. Support Vector Machines (SVM)
-
-Support Vector Machines are powerful classifiers that aim to find a hyperplane that best separates the data into different classes. SVMs work well in high-dimensional spaces and are effective for both linear and non-linear relationships.
-
-## 6. K-Nearest Neighbors (KNN)
-
-K-Nearest Neighbors is a simple and intuitive algorithm used for classification and regression. It classifies a data point by a majority vote of its k-nearest neighbors, where k is a user-defined constant.
-
-## 7. Random Forest
-
-Random Forest is an ensemble learning method that combines multiple decision trees to create a more robust and accurate model. It randomly selects subsets of the features and builds several trees, and then averages the predictions for better generalization.
