@@ -27,6 +27,7 @@ Before diving into machine learning algorithms, it's crucial to understand the d
 ## 3. Supervised Learning
 
 Learn about supervised learning, a type of machine learning where the model is trained on a labeled dataset.
+[supervised learning course link](./03-supervised-learning/README.md) 
 
 ## 4. Unsupervised Learning
 
