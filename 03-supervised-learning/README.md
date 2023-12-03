@@ -54,19 +54,7 @@ clf = clf.fit(X, y)
 tree.plot_tree(clf)
 ```
 
-## 4. Support Vector Machines (SVM)
-
-Support Vector Machines are powerful classifiers that aim to find a hyperplane that best separates the data into different classes. SVMs work well in high-dimensional spaces and are effective for both linear and non-linear relationships.
-
-## 5. K-Nearest Neighbors (KNN)
-
-K-Nearest Neighbors is a simple and intuitive algorithm used for classification and regression. It classifies a data point by a majority vote of its k-nearest neighbors, where k is a user-defined constant.
-
-## 6. Random Forest
-
-Random Forest is an ensemble learning method that combines multiple decision trees to create a more robust and accurate model. It randomly selects subsets of the features and builds several trees, and then averages the predictions for better generalization.
-
-## 7. Linear Regression
+## 5. Linear Regression
 
 Linear regression is a simple yet powerful algorithm used for predicting a continuous target variable. Let's implement a basic linear regression model using Python and scikit-learn.
 
@@ -105,3 +93,17 @@ plt.ylabel('y')
 plt.title('Linear Regression Example')
 plt.show()
 ```
+
+## 6. Support Vector Machines (SVM)
+
+Support Vector Machines are powerful classifiers that aim to find a hyperplane that best separates the data into different classes. SVMs work well in high-dimensional spaces and are effective for both linear and non-linear relationships.
+
+## 7. K-Nearest Neighbors (KNN)
+
+K-Nearest Neighbors is a simple and intuitive algorithm used for classification and regression. It classifies a data point by a majority vote of its k-nearest neighbors, where k is a user-defined constant.
+
+## 8. Random Forest
+
+Random Forest is an ensemble learning method that combines multiple decision trees to create a more robust and accurate model. It randomly selects subsets of the features and builds several trees, and then averages the predictions for better generalization.
+
+
